@@ -6,6 +6,11 @@ const routes = [
         name:"Home",
         component:()=>import('../components/Homepage.vue')
     },
+    {
+        path:'/project_1',
+        name:"Project_1",
+        component:()=>import('../components/Homepage.vue')
+    },
 
     {
         path:'/classErrorList/',
