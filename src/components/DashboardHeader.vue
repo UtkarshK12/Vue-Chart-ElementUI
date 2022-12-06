@@ -4,10 +4,6 @@
        
             <el-col justify="space-evenly">
 
-                <el-page-header :icon="Expand" justify="space-between">
-                    <el-col>
-                        
-                    </el-col>
                     <template #icon />
 
             <template #title>
@@ -19,12 +15,28 @@
                 <div class="text"><h2>Dashboard</h2></div>
             </template>
             
-        </el-page-header>
+        <!-- </el-page-header> -->
 
             </el-col>
     </div>
   </template>
-  
+
+<script>
+export default{
+data () {
+    return {
+      expand: true
+    }
+  },
+  methods: {
+    open: function() {
+      this.expand = !this.expand
+
+    },
+  }
+}
+</script>
+
 <style scoped>
 
 .header{
@@ -51,8 +63,3 @@ margin: 30px;
 }
 
 </style>
-
-  <script lang="ts" setup>
-  import { Expand } from '@element-plus/icons-vue'
-  </script>
-  

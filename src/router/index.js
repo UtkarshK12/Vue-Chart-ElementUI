@@ -9,6 +9,11 @@ const routes = [
        
 
     },
+    {
+        path:'/project_1',
+        name:"Project_1",
+        component:()=>import('../components/Homepage.vue')
+    },
 
     {
         path:'/classErrorPage/:errorClassId',
